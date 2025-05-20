@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch
 class HPU(nn.Module):
-    def __init__(self, input_channels=3, conv_kernels=[(5,1), (1,5)]):
+    def __init__(self, input_channels, conv_kernels):
         super().__init__()
         self.scale = input_channels**-0.5
         
