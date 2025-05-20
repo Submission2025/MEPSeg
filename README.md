@@ -75,4 +75,4 @@ python test.py --datasets ISIC2018
 
 ## 🎫 License
 
-The content of this project itself is licensed under [LICENSE](https://github.com/ILoveICCV/RoMERPA-UNet/blob/main/LICENSE).
+The content of this project itself is licensed under [LICENSE](https://github.com/Submission2025/MEPSeg/tree/main?tab=Apache-2.0-1-ov-file).
