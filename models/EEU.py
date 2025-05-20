@@ -25,7 +25,7 @@ class MSFA_Block(nn.Module):
     
     
 class MSFA(nn.Module):
-    def __init__(self, in_channels, kernel_list=[3,9]):
+    def __init__(self, in_channels, kernel_list):
         super().__init__()
         
         block_configs = [
@@ -55,7 +55,7 @@ class MSFA(nn.Module):
 
 
 class EEU(nn.Module):
-    def __init__(self,in_channels=3,kernel_list=[3,9], wavelet='haar', level=1, mode="replicate",dilation_values= [2, 3, 4]):
+    def __init__(self,in_channels,kernel_list, wavelet, level, mode,dilation_values):
         super().__init__()
         self.msfa=MSFA(in_channels,kernel_list=kernel_list)
         self.mffe=MFFE(in_channels=in_channels, wavelet=wavelet, level=level, mode=mode)
