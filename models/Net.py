@@ -4,7 +4,7 @@ import torch.nn as nn
 
 from models.EPFM import EPFM
 class MEPSeg(nn.Module):
-    def __init__(self, input_channels=3, out_channels = [10, 20, 30, 40, 50], kernel_list=[3,9], wavelet='haar', level=1, mode="replicate",dilation_values= [2, 3, 4], conv_kernels=[(5,1), (1,5)]):
+    def __init__(self, input_channels, out_channels, kernel_list, wavelet, level, mode,dilation_values, conv_kernels):
         super().__init__()
         
         self.en_layers = nn.ModuleList([
