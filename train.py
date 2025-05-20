@@ -56,13 +56,11 @@ def parse_args():
     parser.add_argument(
         "--gpu",
         type=int,
-        default=0,
         help="gpu_id:",
     )
     parser.add_argument(
         "--random",
         type=int,
-        default=42,
         help="random configure:",
     )
     parser.add_argument(
