@@ -2,10 +2,6 @@
 <h1> MEP-Seg: Multi-frequency Edge Enhancement and Prompt-guided Attention for Medical Image Segmentation </h1>
 </div>
 
-## 🎈 News
-
-- [2025.2.19] Training and inference code released
-
 ## ⭐ Abstract
 
 Medical image segmentation is crucial for clinical decision-making, treatment planning, and disease tracking. Nonetheless, there are many challenges in medical image segmentation, especially in the exploration of multi-scale and multi-frequency features for more effective edge detection and noise suppression. Meanwhile, it is also imperative to improve the adaptability and generalization ability of the model in medical images of different modalities. To this end, we propose MEP-Seg, which consists of two units: Edge Enhancement Unit (EEU) and Hybrid Prompt Unit (HPU). EEU enhances feature maps through multi-scale convolution and separates multi-frequency information. High-frequency components are used to capture the boundaries of salient objects, while low-frequency components help suppress noise brought by non-salient objects. In addition, the combination of multi-directional and fine-grained global-local offsets optimizes the adaptability of the model to irregular edges. HPU generates high-frequency and low-frequency prompt masks, and extracts transferable segmentation features applicable to a variety of medical cases through a prompt-guided cross-attention mechanism, thereby improving generalization performance. Evaluations on 7 public datasets show that MEP-Seg surpasses 11 existing state-of-the-art methods in segmentation accuracy.
