@@ -52,7 +52,7 @@ def fwt_pad2(data, wavelet, mode):
     return data_pad
 
 class MFFE(nn.Module):
-    def __init__(self,in_channels=3, wavelet='haar', level=1, mode="replicate"):
+    def __init__(self,in_channels, wavelet, level, mode):
         super().__init__()
         self.wavelet = pywt.Wavelet(wavelet)
         lo, hi = get_filter_tensors(self.wavelet)
