@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 
 class EPFM(nn.Module):
-    def __init__(self, in_channels, out_channels, sample, up=True, kernel_list=[3,9], wavelet='haar', level=1, mode="replicate",dilation_values= [2, 3, 4], conv_kernels=[(5,1), (1,5)]):
+    def __init__(self, in_channels, out_channels, sample, kernel_list, wavelet, level, mode,dilation_values, conv_kernels, up=True):
         super().__init__()
         
         self.eeu = EEU(in_channels, kernel_list=kernel_list, wavelet=wavelet, level=level, mode=mode,dilation_values=dilation_values)
