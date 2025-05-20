@@ -50,7 +50,7 @@ class DirectionOffsets(nn.Module):
 class EFR(nn.Module):
     def __init__(self, 
                 in_channels: int, 
-                dilation_values: list = [2, 3, 4],
+                dilation_values: list,
                 padding_values: list = None) -> None:
         super().__init__()
         
